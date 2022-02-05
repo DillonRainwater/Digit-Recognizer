@@ -29,7 +29,7 @@ inputshape = X.columns.size
 model = keras.Sequential([
     layers.Dense(128, activation='relu', input_shape=[inputshape]),
     layers.Dense(64, activation='relu'),
-    layers.Dense(10, activation="sigmoid"),
+    layers.Dense(10, activation="softmax"),
 ])
 
 model.compile(
